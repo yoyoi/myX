@@ -8,6 +8,8 @@ export const authConfig: NextAuthConfig = {
   session: { strategy: 'jwt' },
   // Force NextAuth to use the correct URL
   basePath: '/api/auth',
+  // Override the URL to ensure it uses the correct domain
+  url: process.env.NEXTAUTH_URL || 'https://myx-9uc44qkq1-zyx6543210s-projects.vercel.app',
   providers: [
     GitHub({
       clientId: process.env.GITHUB_ID!,
