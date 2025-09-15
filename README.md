@@ -35,7 +35,7 @@ cp .env.local.example .env.local
 
 ```env
 # NextAuth 設定
-NEXTAUTH_URL=https://myx-9uc44qkq1-zyx6543210s-projects.vercel.app
+NEXTAUTH_URL=https://myx-app.vercel.app
 NEXTAUTH_SECRET=guLSRK3NdH1BFPYYpPgBioPgd4JWYly/IyfHXGcNY1E=
 
 # GitHub OAuth (可選)
@@ -251,3 +251,4 @@ This spins up an **Architect** and **Coder** agent to plan/refine features (e.g.
 # myX
 # myX
 # Force redeploy Mon Sep 15 19:46:19 CST 2025
+# Force update NEXTAUTH_URL Mon Sep 15 21:01:47 CST 2025
