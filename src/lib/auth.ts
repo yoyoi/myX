@@ -6,6 +6,8 @@ import { prisma } from '@/lib/prisma';
 
 export const authConfig: NextAuthConfig = {
   session: { strategy: 'jwt' },
+  // Force NextAuth to use the correct URL
+  basePath: '/api/auth',
   providers: [
     GitHub({
       clientId: process.env.GITHUB_ID!,
