@@ -123,6 +123,26 @@ myX/
 └── autogen/             # AutoGen 腳本
 ```
 
+## 🔧 OAuth 問題診斷
+
+如果部署後 OAuth 無法登入，請執行以下診斷：
+
+```bash
+# 檢查環境變數設定
+npm run check-oauth
+
+# 或指定您的域名
+npm run check-oauth your-domain.vercel.app
+```
+
+### 常見問題解決
+
+1. **環境變數未設定**：確保在 Vercel Dashboard 中設定了所有必要的環境變數
+2. **回調 URL 不匹配**：確保 OAuth 應用程式的回調 URL 設定為您的部署域名
+3. **NEXTAUTH_URL 錯誤**：確保設定為正確的生產域名
+
+詳細設定指南請參考：[DEPLOYMENT_OAUTH_SETUP.md](./DEPLOYMENT_OAUTH_SETUP.md)
+
 ## 🚀 部署
 
 ### Vercel + Neon + Pusher 部署

@@ -10,7 +10,9 @@
     "format": "prettier --write .",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:studio": "prisma studio"
+    "prisma:studio": "prisma studio",
+    "check-oauth": "node scripts/check-oauth.js",
+    "debug-env": "DEBUG_ENV=true node scripts/check-oauth.js"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.10.0",

@@ -19,6 +19,19 @@ export const authConfig: NextAuthConfig = {
     }),
   ],
   debug: process.env.NODE_ENV === 'development',
+  logger: {
+    error: (error: Error) => {
+      console.error('NextAuth Error:', error);
+    },
+    warn: (message: string) => {
+      console.warn('NextAuth Warning:', message);
+    },
+    debug: (message: string) => {
+      if (process.env.NODE_ENV === 'development') {
+        console.log('NextAuth Debug:', message);
+      }
+    },
+  },
   callbacks: {
     async session({ session, token }) {
       if (session.user && token.sub) {
