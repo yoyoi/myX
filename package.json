@@ -2,6 +2,7 @@
   "name": "mini-x-autogen",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://myx-9uc44qkq1-zyx6543210s-projects.vercel.app",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "prisma generate && next build",

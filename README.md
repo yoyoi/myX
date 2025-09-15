@@ -35,8 +35,8 @@ cp .env.local.example .env.local
 
 ```env
 # NextAuth 設定
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-secret-key-here
+NEXTAUTH_URL=https://myx-9uc44qkq1-zyx6543210s-projects.vercel.app
+NEXTAUTH_SECRET=guLSRK3NdH1BFPYYpPgBioPgd4JWYly/IyfHXGcNY1E=
 
 # GitHub OAuth (可選)
 GITHUB_ID=your-github-client-id

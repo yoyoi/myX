@@ -72,7 +72,11 @@ export const authConfig: NextAuthConfig = {
       // 確保用戶有有效的 email
       console.log('SignIn callback:', { user: user?.email, provider: account?.provider });
       try {
-        return !!user.email;
+        if (!user?.email) {
+          console.error('No email found in user object');
+          return false;
+        }
+        return true;
       } catch (error) {
         console.error('SignIn callback error:', error);
         return false;

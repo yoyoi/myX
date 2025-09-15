@@ -107,3 +107,4 @@ dist
 # Temporary folders
 tmp/
 temp/
+.env*.local
